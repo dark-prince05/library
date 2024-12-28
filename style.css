@@ -1,0 +1,119 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+body {
+  margin: 0;
+  background: #d3c5e5;
+  padding: 0;
+}
+.add-btn {
+  width: 100px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 0.9em;
+  border-radius: 20px;
+  border: 1px solid black;
+  background: #d3c5e5;
+}
+.add-btn:hover {
+  background: #c4b5fd;
+}
+.add-btn:active,
+.buttons button:active {
+  transform: scale(0.9);
+}
+.my-lib {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 1.5em;
+}
+.lib {
+  font-size: 2.5em;
+  font-weight: bolder;
+  color: white;
+}
+.header {
+  background: #735da5;
+  padding: 10px;
+  text-align: center;
+}
+.grid {
+  display: grid;
+  justify-items: center;
+}
+.container {
+  max-width: 80%;
+  display: grid;
+  border: 1px solid black;
+  background: white;
+  grid-template-columns: 0.2fr 2fr 1fr 0.4fr 0.4fr 0.3fr;
+}
+.container > * {
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+dialog::backdrop {
+  backdrop-filter: blur(3px);
+}
+dialog {
+  height: 500px;
+  background: #d3c5e5;
+  padding: 0;
+}
+.dialog-head {
+  background: #735da5;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 20px;
+}
+.form {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  display: grid;
+  border: 2px solid #735da5;
+  justify-items: center;
+  height: 70%;
+}
+.form > .inp {
+  justify-self: end;
+}
+input {
+  background: #d3c5e5;
+  border: 2px solid #735da5;
+  font-size: 0.9em;
+}
+input:focus {
+  outline: 2px solid blue;
+}
+span {
+  color: red;
+}
+label {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.buttons button {
+  background: #735da5;
+  font-weight: bold;
+  font-size: 1em;
+  border: 1px solid #000000;
+  margin: 10px;
+  width: 90px;
+  height: 35px;
+  color: white;
+}
+.buttons button:hover {
+  background: #5b21b6;
+}

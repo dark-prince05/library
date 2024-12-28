@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Library</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="lib">Library</div>
+      <button class="add-btn">Add Book</button>
+    </div>
+    <div class="my-lib">Books in the library</div>
+    <dialog>
+      <div class="dialog-head">Enter the book details</div>
+      <form class="form">
+        <div class="inp">
+          <label for="title"><span>*</span>Title :</label>
+          <input type="text" name="title" required />
+        </div>
+        <div class="inp">
+          <label for="author"><span>*</span>Author :</label>
+          <input type="text" name="author" required />
+        </div>
+        <div class="inp">
+          <label for="pages"><span>*</span>No.of Pages :</label>
+          <input type="number" name="pages" required />
+        </div>
+        <div>
+          <label for="read">Have you read it?</label>
+          <input type="checkbox" name="read" />
+        </div>
+        <div class="buttons">
+          <button class="cancel">Cancel</button> <button>Add</button>
+        </div>
+      </form>
+    </dialog>
+    <div class="grid">
+      <div class="container">
+        <div class="s-no heading">S.No</div>
+        <div class="title heading">Title</div>
+        <div class="author heading">Author</div>
+        <div class="pages heading">No.of Pages</div>
+        <div class="read heading">Read it?</div>
+        <div class="remove heading">Remove</div>
+        <div class>1</div>
+        <div>How to win friends and infuence people</div>
+        <div class>Dale Carnegie</div>
+        <div class>192</div>
+        <div class>yes</div>
+        <div class>Remove</div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
