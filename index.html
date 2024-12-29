@@ -17,39 +17,34 @@
       <form class="form">
         <div class="inp">
           <label for="title"><span>*</span>Title :</label>
-          <input type="text" name="title" required />
+          <input id="title" type="text" name="title" required />
         </div>
         <div class="inp">
           <label for="author"><span>*</span>Author :</label>
-          <input type="text" name="author" required />
+          <input id="author" type="text" name="author" required />
         </div>
         <div class="inp">
           <label for="pages"><span>*</span>No.of Pages :</label>
-          <input type="number" name="pages" required />
+          <input id="pages" type="number" name="pages" required />
         </div>
         <div>
           <label for="read">Have you read it?</label>
-          <input type="checkbox" name="read" />
+          <input id="check" type="checkbox" name="read" />
         </div>
         <div class="buttons">
-          <button class="cancel">Cancel</button> <button>Add</button>
+          <button class="cancel">Cancel</button>
+          <button class="submit-btn">Add</button>
         </div>
       </form>
     </dialog>
     <div class="grid">
       <div class="container">
-        <div class="s-no heading">S.No</div>
-        <div class="title heading">Title</div>
-        <div class="author heading">Author</div>
-        <div class="pages heading">No.of Pages</div>
-        <div class="read heading">Read it?</div>
-        <div class="remove heading">Remove</div>
-        <div class>1</div>
-        <div>How to win friends and infuence people</div>
-        <div class>Dale Carnegie</div>
-        <div class>192</div>
-        <div class>yes</div>
-        <div class>Remove</div>
+        <div class="heading">S.No</div>
+        <div class="heading">Title</div>
+        <div class="heading">Author</div>
+        <div class="heading">No.of Pages</div>
+        <div class="heading">Read it?</div>
+        <div class="heading">Remove</div>
       </div>
     </div>
     <script src="script.js"></script>

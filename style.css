@@ -19,7 +19,10 @@ body {
   background: #c4b5fd;
 }
 .add-btn:active,
-.buttons button:active {
+.buttons button:active,
+.read-yes:active,
+.read-no:active,
+.remove-btn:active {
   transform: scale(0.9);
 }
 .my-lib {
@@ -56,6 +59,33 @@ body {
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+.container button {
+  font-size: 0.9em;
+  border-radius: 20px;
+  border: 2px solid black;
+  width: 50px;
+  height: 30px;
+  color: white;
+}
+.read-yes {
+  background: #16a34a;
+  font-weight: bold;
+}
+.read-no {
+  background: #e11d48;
+  font-weight: bold;
+}
+.read-yes:hover {
+  background: #15803d;
+}
+.read-no:hover,
+.remove-btn:hover {
+  background: #9f1239;
+}
+.remove-btn {
+  background: #e11d48;
+  font-weight: bold;
 }
 .heading {
   font-weight: bold;
