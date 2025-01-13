@@ -1,20 +1,24 @@
 const library = [];
 
-function Book(title, author, pages, readStatus) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.readStatus = readStatus;
-  this.isread = function () {
+class Book {
+  constructor(title, author, pages, readStatus) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.readStatus = readStatus;
+  }
+  isread() {
     this.readStatus = this.readStatus ? false : true;
-  };
+  }
 }
 
-function addBookToLibrary(title, author, pages, readStatus) {
-  library.push(new Book(title, author, pages, readStatus));
+class AddBookToLibrary {
+  constructor(title, author, pages, readStatus) {
+    library.push(new Book(title, author, pages, readStatus));
+  }
 }
 
-addBookToLibrary(
+new AddBookToLibrary(
   "How to win friends and infuence people",
   "Dale Carnegie",
   192,
@@ -101,7 +105,7 @@ submitBtn.addEventListener("click", (e) => {
   const pages = document.querySelector("#pages").value;
   const read = document.querySelector("#check");
   if (!title || !author || !pages) return;
-  addBookToLibrary(title, author, pages, read.checked);
+  new AddBookToLibrary(title, author, pages, read.checked);
   removeBooks();
   showBooks();
   form.reset();
