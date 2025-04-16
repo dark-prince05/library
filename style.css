@@ -114,7 +114,8 @@ dialog {
   display: grid;
   border: 2px solid #735da5;
   justify-items: center;
-  height: 70%;
+  height: 19rem;
+  row-gap: 2rem;
 }
 .form > .inp {
   justify-self: end;
@@ -146,4 +147,25 @@ label {
 }
 .buttons button:hover {
   background: #5b21b6;
+}
+
+#rotate-warning {
+  height: 100vh;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem;
+  display: none;
+}
+
+@media screen and (orientation: portrait) {
+  #rotate-warning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body > *:not(#rotate-warning) {
+    display: none;
+  }
 }
